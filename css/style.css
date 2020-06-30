@@ -1,0 +1,59 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END RESET */
+
+/* GENERAL RULES */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.holiday {
+  color: red;
+}
+.square {
+  width: calc(100% / 7);
+  height: 150px;
+  border: 1px solid black;
+}
+ul {
+  list-style: none;
+}
+/* END GENERAL RULES */
+
+/* MAIN RULES */
+/* Arrow rules */
+.arrow {
+  padding: 0 15px;
+}
+.arrow i{
+  font-size: 2em;
+  cursor: pointer;
+}
+/* End arrow rules */
+/* Calendar rules */
+.calendar {
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+.calendar h1 {
+  padding: 20px 0;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar span {
+  display: block;
+  padding: 10px 0;
+}
+/* End calendar rules */
+/* END MAIN RULES */

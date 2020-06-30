@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Handlebars -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- Moment.js -->
+    <script src="js/moment.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Start general wrapper -->
+    <div class="wrapper">
+
+      <div id="prev" class="arrow">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <div class="calendar">
+        <h1 date-current-month="" id="currentMonth"></h1>
+        <ul class="calendarList"></ul>
+      </div>
+
+      <div id="next" class="arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+    </div>
+    <!-- End general wrapper -->
+
+
+    <!-- Script Javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Handlebars template -->
+    <script id="calendar-template" type="text/x-handlebars-template">
+      <li date-current-day="{{day_attr}}" class="square">
+        <span>{{dayNumber}}</span>
+        <span>{{dayName}}</span>
+        <span class="holidayName">{{holidayName}}</span>
+      </li>
+    </script>
+    <!-- End handlebars template -->
+
+  </body>
+</html>
